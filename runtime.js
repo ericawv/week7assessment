@@ -60,11 +60,11 @@ const extraLargeArray = getSizedArray(100000);
  For the append (push()): For majority of the larger arrays, the runtime performance showed to be faster when the element was added to the end of the arraay and the new array length was returned. With the push method and a larger array, the performace will be faster when each index does not need to be moved or unshifted to add the element. The doubleAppend function demonstrated that it is scableable as the array size increases.
 
  Extra Credit: 
- (References: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift and https://www.tutorialspoint.com/difference-between-push-and-unshift-methods-in-javascript)
+ (References: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift and 
+              https://www.tutorialspoint.com/difference-between-push-and-unshift-methods-in-javascript)
 
  The slower function is slow because it uses the unshift method. The unshift method adds a new element to the beginning of an array and overwrites the original array. The unshift method contributes to a slower runtime, becuase this method requires unshifting each index element in the array when the new element is being added to the beginning of the array. This review supports why the runtime increased for the mediumArray, largeArray, and ExtraArray when the doublerInsert function was ran.
-
- */
+*/
 
 // Try it with first function
 perf.start();                     // Starts timer
